@@ -8,31 +8,36 @@ export const Container = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    align-items: center;
+    background-color: #00604E;
     margin: 0;
     width: 50%;
     //border: 1px solid pink;
     overflow: hidden;
 `;
 
-export const MainCard = styled.div `
-    width: 100%;
-    height: 200px;
-    background-color: #DCFFF9;
-    color: #00604E;
-`;
 export const CardBox = styled.div `
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     height: 225px;
-    background-color: #00604E;
-    color: white;
+    background-color: ${props => props.fillColor};
+    color: ${props => props.textColor};
 `;
 
 export const InfoWrapper = styled.div `
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    width: 100%;
+`;
+
+export const HorizontalWrapper = styled.div `
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px solid red;
 `;
 
 export const CardTitle = styled.h2 `
@@ -45,5 +50,6 @@ export const CardDescription = styled.p `
     font-size: 18px;
 `;
 
-export const CardImage = styled.img `
+export const CardImage = styled.div `
+    margin-left: 10%;
 `;

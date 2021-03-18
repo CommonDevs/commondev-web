@@ -1,21 +1,13 @@
 import React from "react";
-import { Container, MainCard, CardBox, InfoWrapper, CardTitle, CardDescription } from "./styles/InfoStyles";
+import { Container, CardBox, InfoWrapper, CardTitle, CardDescription, CardImage, HorizontalWrapper } from "./styles/InfoStyles";
 
 export default function Info({ children, ...restProps }) {
     return <Container {...restProps}>{children}</Container>;
 }
 
-Info.Main = function Main({ children, ...restProps }) {
+Info.Card = function Card({ children, fillColor="#00604E", textColor="white", ...restProps }) {
     return(
-        <MainCard {...restProps}>
-            {children}
-        </MainCard>
-    )
-}
-
-Info.Card = function Card({ children, ...restProps }) {
-    return(
-        <CardBox {...restProps}>
+        <CardBox fillColor={fillColor} textColor={textColor}{...restProps}>
             {children}
         </CardBox>
     )
@@ -28,6 +20,14 @@ Info.Wrapper = function Wrapper({ children, ...restProps }) {
         </InfoWrapper>
     )
 }
+
+Info.Hwrapper = function Hwrapper({ children, ...restProps }) {
+    return(
+        <HorizontalWrapper {...restProps}>
+            {children}
+        </HorizontalWrapper>
+    )
+}   
 
 Info.Title = function Title({ children, ...restProps }) {
     return(
@@ -44,3 +44,13 @@ Info.Description = function Description({ children, ...restProps }) {
         </CardDescription>
     )
 }
+
+Info.Image = function Image({ children, ...restProps }) {
+    return (
+        <CardImage {...restProps}>
+            {children}
+            </CardImage>
+    )
+   
+}
+
