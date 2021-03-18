@@ -25,23 +25,24 @@ function App() {
 
       {/*Carta informativa*/}
       <Info>
+
         <Info.Card fillColor="#DCFFF9" textColor="#00604E">
-          <Info.Wrapper>
+          <Info.Wrapper margin="0 0 0 5%">
             <Info.Title>
               What do we offer?
             </Info.Title>
             <Info.Hwrapper>
-              <Info.Wrapper>
+              <Info.Wrapper align="center" margin="0 0 0 -5%">
                 <DevImage width="96px" height="auto"/>
-                <p>Development</p>
+                <b><p style={{margin: "5px 0 0 0", color: "black"}}>Development</p></b>
               </Info.Wrapper>
-              <Info.Wrapper>
+              <Info.Wrapper align="center">
                 <ExpImage width="96px" height="auto"/>
-                <p>Exploration</p>
+                <b><p style={{margin: "5px 0 0 0", color: "black"}}>Exploration</p></b>
               </Info.Wrapper>
-              <Info.Wrapper>
+              <Info.Wrapper align="center">
                 <InnImage width="96px" height="auto"/>
-                <p>Innovation</p>
+                <b><p style={{margin: "5px 0 0 0", color: "black"}}>Innovation</p></b>
               </Info.Wrapper>
             </Info.Hwrapper> 
           </Info.Wrapper>  
@@ -50,7 +51,7 @@ function App() {
           <Info.Image>
             <DevImage fill="white" width="96px" height="auto" />
           </Info.Image>
-          <Info.Wrapper>
+          <Info.Wrapper margin="0 0 0 5%">
             <Info.Title>Development</Info.Title>
             <Info.Description>Blablal with very labal a lot so very good  yes ye sy</Info.Description>
           </Info.Wrapper>
@@ -60,7 +61,7 @@ function App() {
           <Info.Image>
             <ExpImage fill="white" width="96px" height="auto" />
           </Info.Image>
-          <Info.Wrapper>
+          <Info.Wrapper margin="0 0 0 5%">
             <Info.Title>Exploration</Info.Title>
             <Info.Description>We dive deep into minds to fing what´s best</Info.Description>
           </Info.Wrapper>
@@ -70,19 +71,14 @@ function App() {
           <Info.Image>
             <InnImage fill="white" width="96px" height="auto" />
           </Info.Image>
-          <Info.Wrapper>
+          <Info.Wrapper margin="0 0 0 5%">
             <Info.Title>Innovation</Info.Title>
             <Info.Description>O que xlldlelell jadjk noo eee ni tan mal</Info.Description>
           </Info.Wrapper>
         </Info.Card>
-        
-        
-        
+
       </Info>
 
-
-
-      
     </React.Fragment>
   );
 }

@@ -29,15 +29,18 @@ export const InfoWrapper = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5%;
+    align-items: ${props => props.align};
+    margin: ${props => props.margin};
     width: 100%;
+    //border: 1px solid red;
 `;
 
 export const HorizontalWrapper = styled.div `
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    border: 1px solid red;
+    //border: 1px solid red;
 `;
 
 export const CardTitle = styled.h2 `
@@ -46,7 +49,7 @@ export const CardTitle = styled.h2 `
 `;
 
 export const CardDescription = styled.p `
-    margin: 0 0 0 2px;
+    margin: 0 0 0 1px;
     font-size: 18px;
 `;
 
