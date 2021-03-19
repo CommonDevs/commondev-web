@@ -48,31 +48,33 @@ function App() {
         </Info.Card>
         <Info.Card>
           <Info.Image>
-            <DevImage fill="white" width="96px" height="auto" />
-          </Info.Image>
-          <Info.Wrapper>
-            <Info.Title>Development</Info.Title>
-            <Info.Description>Blablal with very labal a lot so very good  yes ye sy</Info.Description>
-          </Info.Wrapper>
-        </Info.Card>
-        <div style={{width: "90%", height: "1px", backgroundColor: "#DCFFF9"}} />
-        <Info.Card>
-          <Info.Image>
             <ExpImage fill="white" width="96px" height="auto" />
           </Info.Image>
           <Info.Wrapper>
             <Info.Title>Exploration</Info.Title>
-            <Info.Description>We dive deep into minds to fing what´s best</Info.Description>
+            <Info.Description>We dive deep in the market to find what´s best</Info.Description>
           </Info.Wrapper>
         </Info.Card>
-        <div style={{width: "90%", height: "1px", backgroundColor: "#DCFFF9"}} />
+        
+        <div style={{ width: "90%", height: "1px", backgroundColor: "#DCFFF9" }} />
         <Info.Card>
           <Info.Image>
             <InnImage fill="white" width="96px" height="auto" />
           </Info.Image>
           <Info.Wrapper>
             <Info.Title>Innovation</Info.Title>
-            <Info.Description>O que xlldlelell jadjk noo eee ni tan mal</Info.Description>
+            <Info.Description>We test new ideas to find success</Info.Description>
+          </Info.Wrapper>
+        </Info.Card>
+     
+        <div style={{ width: "90%", height: "1px", backgroundColor: "#DCFFF9" }} />
+        <Info.Card>
+          <Info.Image>
+            <DevImage fill="white" width="96px" height="auto" />
+          </Info.Image>
+          <Info.Wrapper>
+            <Info.Title>Development</Info.Title>
+            <Info.Description>We design and implement clean and scalable software</Info.Description>
           </Info.Wrapper>
         </Info.Card>
         
