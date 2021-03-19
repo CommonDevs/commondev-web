@@ -4,7 +4,8 @@ import Info from './components/info/Info';
 import { ReactComponent as DevImage } from './images/coding.svg';
 import { ReactComponent as ExpImage } from './images/compass.svg';
 import { ReactComponent as InnImage } from './images/light-bulb.svg';
-
+import ProjectShowcase from './components/showcase/Showcase';
+import ConfesionesIcon from './images/confesiones-icon.png';
 function App() {
 
   return (
@@ -78,10 +79,27 @@ function App() {
           </Info.Wrapper>
         </Info.Card>
         
-        
-        
       </Info>
+      <div id="projects-showcase-title">
+        Projects Showcase
+        <div style={{ width: "90%", height: "1px", backgroundColor: "#DCFFF9", position:"relative",right:"60px",marginBottom:"100px"}} />
+      </div>
 
+      <ProjectShowcase >
+        <ProjectShowcase.Header>
+        <ProjectShowcase.Description>
+            <ProjectShowcase.Title src={ConfesionesIcon}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </ProjectShowcase.Title>
+          </ProjectShowcase.Description>
+          <ProjectShowcase.QRCode />
+        </ProjectShowcase.Header>
+        <ProjectShowcase.Carousel>
+
+        </ProjectShowcase.Carousel>
+      </ProjectShowcase>
 
 
       
