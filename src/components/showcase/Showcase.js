@@ -22,7 +22,9 @@ ProjectShowcase.Description = function DescriptionDiv({ children, ...restProps }
 }
 ProjectShowcase.Icon = function IconDiv({src}) {
     return(
+        <div>
             <img width="56px" height="56px" src={src} alt="App Icon" />
+        </div>
     )
 }
 

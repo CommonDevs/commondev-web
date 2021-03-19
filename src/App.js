@@ -4,6 +4,7 @@ import Info from './components/info/Info';
 import { ReactComponent as DevImage } from './images/coding.svg';
 import { ReactComponent as ExpImage } from './images/compass.svg';
 import { ReactComponent as InnImage } from './images/light-bulb.svg';
+import { ReactComponent as QRCode } from './images/qr-code.svg';
 import ProjectShowcase from './components/showcase/Showcase';
 import ConfesionesIcon from './images/confesiones-icon.png';
 function App() {
@@ -98,7 +99,9 @@ function App() {
              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </ProjectShowcase.Text>
           </ProjectShowcase.Description>
-        <ProjectShowcase.QRCode />
+        <ProjectShowcase.QRCode>
+          <QRCode width="252" height="252"/>
+        </ProjectShowcase.QRCode>
         </ProjectShowcase.Header>
         <ProjectShowcase.Carousel>
 
