@@ -12,7 +12,6 @@ export const Container = styled.div `
 `;
 
 export const TeamBox = styled.div `
-    font-family: 'Abel', sans-serif;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -26,11 +25,13 @@ export const TeamName = styled.h1 `
     margin: 0;
     padding: 0;
     font-size: 120px;
+    font-weight: 300;
     color: white;
     //border: 1px solid yellow;
 `;
 
 export const TeamDescription = styled.h3 `
+    font-weight: 300;
     margin: 0 0 0 8px;
     font-size: 24px;
     color: white;
