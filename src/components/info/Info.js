@@ -13,9 +13,9 @@ Info.Card = function Card({ children, fillColor="#00604E", textColor="white", ..
     )
 }
 
-Info.Wrapper = function Wrapper({ children, ...restProps }) {
+Info.Wrapper = function Wrapper({ children, align, margin="0", ...restProps }) {
     return(
-        <InfoWrapper {...restProps}>
+        <InfoWrapper align={align} margin={margin} {...restProps}>
             {children}
         </InfoWrapper>
     )
