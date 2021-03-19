@@ -13,6 +13,7 @@ display: flex;
 flex-direction: column;
 `;
 export const TitleText = styled.div `
+display: flex;
  color:white;
  font-size:40px;
 `;
