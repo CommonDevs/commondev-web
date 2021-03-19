@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div `
-    position: absolute;
-    top: 60%;
+    position: relative;
+    top: -150px;
     border-radius: 50px 0 0 50px;
     right: 0;
     display: flex;
@@ -10,7 +10,7 @@ export const Container = styled.div `
     justify-content: flex-end;
     align-items: center;
     background-color: #00604E;
-    margin: 0;
+    margin-left:auto;
     width: 50%;
     //border: 1px solid pink;
     overflow: hidden;
