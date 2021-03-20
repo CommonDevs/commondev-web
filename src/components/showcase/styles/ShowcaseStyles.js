@@ -30,7 +30,7 @@ export const Text = styled.div`
     font-size:28px;
     text-shadow: 1px 1px 4px rgba(0,0,0, 0.5);
 `;
-export const Carousel = styled.div`
+export const CarouselStyle = styled.div`
  
 `;
 
