@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Background from '../../../images/blackBG.jpg';
 
 export const Container = styled.div `
     display: flex;
@@ -9,6 +10,7 @@ export const Container = styled.div `
     align-items: flex-start;
     justify-content: space-around;
     //border: 1px solid pink;
+    background-image: url(${Background});
 `;
 
 export const TeamBox = styled.div `
@@ -24,10 +26,14 @@ export const TeamBox = styled.div `
 export const TeamName = styled.h1 `
     margin: 0;
     padding: 0;
-    font-size: 120px;
+    font-size: 110px;
     font-weight: 300;
     color: white;
     //border: 1px solid yellow;
+    @media (max-width: 1000px) {
+        font-size: 80px;
+        margin: 0 0 20px 50px;
+    }
 `;
 
 export const TeamDescription = styled.h3 `
@@ -35,6 +41,9 @@ export const TeamDescription = styled.h3 `
     margin: 0 0 0 8px;
     font-size: 24px;
     color: white;
+    @media (max-width: 1000px) {
+        margin: 0 0 0 50px;
+    }
     //border: 1px solid blue;
 `;
 
@@ -50,5 +59,8 @@ export const ContactButton = styled.button `
     &:hover {
         background-color: white;
         color: black;
+    }
+    @media (max-width: 1000px) {
+        display: none;
     }
 `;

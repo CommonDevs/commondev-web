@@ -12,8 +12,29 @@ export const Container = styled.div `
     background-color: #00604E;
     margin-left:auto;
     width: 50%;
-    //border: 1px solid pink;
     overflow: hidden;
+    box-shadow: 0px 0px 15px 1px #202020;
+    cursor: default;
+    @media (max-width: 1000px) {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+        top: -100px;
+    }
+`;
+
+export const FirstCardBox = styled.div `
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 225px;
+    background-color: ${props => props.fillColor};
+    color: ${props => props.textColor};
+    @media (max-width: 1000px) {
+        height: 150px;
+        font-size: 0;
+        padding: 15px;
+    }
 `;
 
 export const CardBox = styled.div `
@@ -23,6 +44,9 @@ export const CardBox = styled.div `
     height: 225px;
     background-color: ${props => props.fillColor};
     color: ${props => props.textColor};
+    @media (max-width: 1000px) {
+        height: 150px;
+    }
 `;
 
 export const InfoWrapper = styled.div `
@@ -32,7 +56,6 @@ export const InfoWrapper = styled.div `
     align-items: ${props => props.align};
     margin: ${props => props.margin};
     width: 100%;
-    //border: 1px solid red;
 `;
 
 export const HorizontalWrapper = styled.div `
@@ -55,4 +78,7 @@ export const CardDescription = styled.p `
 
 export const CardImage = styled.div `
     margin-left: 10%;
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `;

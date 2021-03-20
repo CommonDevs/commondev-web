@@ -3,7 +3,7 @@ body {
   font-family:  'Sansation';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #008B72;
+  background-image: linear-gradient(to top, #009D7F,#008B72 , #007D66, #00604E, #004A3C);
 }
 
 code {
@@ -11,8 +11,23 @@ code {
     monospace;
 }
 
-#projects-showcase-title{
-  font-size: 96px;
-  padding: 0 0 0 110px;
-  color: white;
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5f5f5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00604E;
 }
