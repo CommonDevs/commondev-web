@@ -1,12 +1,12 @@
 import React from "react";
-import { Showcase, Header,Title,TitleText,Text,Description,Carousel,QRCode } from "./styles/ShowcaseStyles";
+import { Showcase, Header, Title, TitleText, Text, Description, QRCode } from "./styles/ShowcaseStyles";
 
 export default function ProjectShowcase({ children, ...restProps }) {
     return <Showcase {...restProps}>{children}</Showcase>;
 }
 
 ProjectShowcase.Header = function HeaderDiv({ children, ...restProps }) {
-    return(
+    return (
         <Header {...restProps}>
             {children}
         </Header>
@@ -14,52 +14,76 @@ ProjectShowcase.Header = function HeaderDiv({ children, ...restProps }) {
 }
 
 ProjectShowcase.Description = function DescriptionDiv({ children, ...restProps }) {
-    return(
+    return (
         <Description {...restProps}>
             {children}
         </Description>
     )
 }
-ProjectShowcase.Icon = function IconDiv({src}) {
-    return(
+ProjectShowcase.Icon = function IconDiv({ src }) {
+    return (
+        <div>
             <img width="56px" height="56px" src={src} alt="App Icon" />
+        </div>
     )
 }
 
 ProjectShowcase.TitleText = function TitleTextDiv({ children, ...restProps }) {
-    return(
+    return (
         <TitleText {...restProps}>
-        {children}
+            {children}
         </TitleText>
     )
 }
-ProjectShowcase.Title = function TitleDiv({ children, src,...restProps }) {
-    return(
+ProjectShowcase.Title = function TitleDiv({ children, src, ...restProps }) {
+    return (
         <Title {...restProps}>
-        {ProjectShowcase.Icon(src={src})}
-        {ProjectShowcase.TitleText(children = {children})}
+            {ProjectShowcase.Icon(src = { src })}
+            {ProjectShowcase.TitleText(children = { children })}
         </Title>
     )
 }
 ProjectShowcase.Text = function TextDiv({ children, ...restProps }) {
-    return(
+    return (
         <Text {...restProps}>
             {children}
         </Text>
     )
 }
 ProjectShowcase.QRCode = function QRCodeDiv({ children, ...restProps }) {
-    return(
+    return (
         <QRCode {...restProps}>
             {children}
         </QRCode>
     )
 }
-ProjectShowcase.Carousel = function CarouselDiv({ children, ...restProps }) {
-    return(
-        <Carousel {...restProps}>
-            {children}
-        </Carousel>
-    )
+ProjectShowcase.Carousel = function CarouselDiv({ children, images }) {
+    return (
+        <div >
+        {/* <Carousel offset={-1000}
+            plugins={[
+                'centered',
+                'infinite',
+                'arrows',
+                {
+                    resolve: slidesToShowPlugin,
+                    options: {
+                        numberOfSlides: 2,
+                    },
+                },
+                {
+                    resolve: slidesToScrollPlugin,
+                    options: {
+                        numberOfSlides: 2,
+                    },
+                },
+            ]}
+        >
+            {images.map(path => {
+                return <img src={path} />;
+            })}
+        </Carousel> */}
+        </div>
+    );
 }
 
