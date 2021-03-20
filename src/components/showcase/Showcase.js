@@ -1,8 +1,20 @@
 import React from "react";
-import { Showcase, Header, Title, TitleText, Text, Description, QRCode } from "./styles/ShowcaseStyles";
+import { Showcase, Container, MainTitle, Header, Title, TitleText, Text, Description, QRCode } from "./styles/ShowcaseStyles";
 
 export default function ProjectShowcase({ children, ...restProps }) {
     return <Showcase {...restProps}>{children}</Showcase>;
+}
+
+ProjectShowcase.ShowContainer = function ShowContainer({ children, ...restProps}) {
+    return <Container {...restProps}>
+        {children}
+    </Container>
+}
+
+ProjectShowcase.ShowcaseTitle = function ShowcaseTitle({ children, ...restProps}) {
+    return <MainTitle {...restProps}>
+        {children}
+    </MainTitle>
 }
 
 ProjectShowcase.Header = function HeaderDiv({ children, ...restProps }) {
