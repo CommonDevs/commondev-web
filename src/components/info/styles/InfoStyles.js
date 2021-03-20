@@ -14,6 +14,7 @@ export const Container = styled.div `
     width: 50%;
     //border: 1px solid pink;
     overflow: hidden;
+    box-shadow: 0px 0px 15px 1px #202020;
 `;
 
 export const CardBox = styled.div `

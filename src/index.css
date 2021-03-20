@@ -16,3 +16,23 @@ code {
   padding: 0 0 0 110px;
   color: white;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f5f5f5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00604E;
+}

@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from './components/header/Header';
 import Info from './components/info/Info';
+import ProjectContainer from './containers/ProjectContainer';
+
 import { ReactComponent as DevImage } from './images/coding.svg';
 import { ReactComponent as ExpImage } from './images/compass.svg';
 import { ReactComponent as InnImage } from './images/light-bulb.svg';
-import ProjectShowcase from './components/showcase/Showcase';
-import ConfesionesIcon from './images/confesiones-icon.png';
+
 function App() {
 
   return (
@@ -50,60 +51,45 @@ function App() {
         </Info.Card>
         <Info.Card>
           <Info.Image>
-            <ExpImage fill="white" width="96px" height="auto" />
+            <ExpImage fill="#f5f5f5" width="96px" height="auto" />
           </Info.Image>
           <Info.Wrapper margin="0 0 0 5%">
             <Info.Title>Exploration</Info.Title>
-            <Info.Description>We dive deep in the market to find what´s best</Info.Description>
+            <Info.Description>We dive deep in the market to find what´s best.</Info.Description>
           </Info.Wrapper>
         </Info.Card>
         
         <div style={{ width: "90%", height: "1px", backgroundColor: "#DCFFF9" }} />
         <Info.Card>
           <Info.Image>
-            <InnImage fill="white" width="96px" height="auto" />
+            <InnImage fill="#f5f5f5" width="96px" height="auto" />
           </Info.Image>
           <Info.Wrapper margin="0 0 0 5%">
             <Info.Title>Innovation</Info.Title>
-            <Info.Description>We test new ideas to find success</Info.Description>
+            <Info.Description>We test new ideas to find success.</Info.Description>
           </Info.Wrapper>
         </Info.Card>
      
         <div style={{ width: "90%", height: "1px", backgroundColor: "#DCFFF9" }} />
         <Info.Card>
           <Info.Image>
-            <DevImage fill="white" width="96px" height="auto" />
+            <DevImage fill="#f5f5f5" width="96px" height="auto" />
           </Info.Image>
           <Info.Wrapper  margin="0 0 0 5%">
             <Info.Title>Development</Info.Title>
-            <Info.Description>We design and implement clean and scalable software</Info.Description>
+            <Info.Description>We design and implement clean and scalable software.</Info.Description>
           </Info.Wrapper>
         </Info.Card>
         
       </Info>
+      
       <div id="projects-showcase-title">
         Projects Showcase
         <div style={{ width: "90%", height: "1px", backgroundColor: "#DCFFF9", position:"relative",right:"60px",marginBottom:"100px"}} />
       </div>
-
-      <ProjectShowcase >
-        <ProjectShowcase.Header>
-        <ProjectShowcase.Description>
-            <ProjectShowcase.Title src={ConfesionesIcon}>
-            CONFESIONES
-            </ProjectShowcase.Title>
-            <ProjectShowcase.Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </ProjectShowcase.Text>
-          </ProjectShowcase.Description>
-        <ProjectShowcase.QRCode />
-        </ProjectShowcase.Header>
-        <ProjectShowcase.Carousel>
-
-        </ProjectShowcase.Carousel>
-      </ProjectShowcase>
+      
+      <ProjectContainer/>
+      
 
     </React.Fragment>
   );

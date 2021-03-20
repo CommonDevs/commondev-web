@@ -24,7 +24,7 @@ export const TeamBox = styled.div `
 export const TeamName = styled.h1 `
     margin: 0;
     padding: 0;
-    font-size: 120px;
+    font-size: 110px;
     font-weight: 300;
     color: white;
     //border: 1px solid yellow;
