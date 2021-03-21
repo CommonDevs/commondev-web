@@ -1,0 +1,12 @@
+.carousel_line{
+   width: 90%;
+   height: 1px;
+   background-color:#DCFFF9;
+   margin-top:2%;
+}
+
+@media (max-width: 1000px) {
+    .carousel_line{
+        margin-top:7%;
+    } 
+  }

@@ -1,12 +1,11 @@
 import React from 'react';
 import ProjectShowcase from '../components/showcase/Showcase';
-
+import "./container-styles.css"
 
 import Carousel from '../components/carousel/Carousel';
-export default function ProjectContainer({QRSvg,Icon,title = "",text ="",images = []}) {
-
+export default function ProjectContainer({QRSvg,Icon,title = "",text ="",images = [],carousel_width}) {
     return (
-      <React.Fragment>
+      <React.Fragment> 
         <ProjectShowcase>
           <ProjectShowcase.Header>
             <ProjectShowcase.Description>
@@ -24,8 +23,8 @@ export default function ProjectContainer({QRSvg,Icon,title = "",text ="",images 
           </ProjectShowcase.Header>
          
         </ProjectShowcase>
-        <Carousel images={images}/>
-        <div style={{ width: "90%", height: "1px", backgroundColor: "#DCFFF9", marginTop:"2%"}} />
+        <Carousel images={images} carousel_width={carousel_width}/>
+        <div className = "carousel_line"/>
       </React.Fragment>
       )
       
