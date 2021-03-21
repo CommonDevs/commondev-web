@@ -12,7 +12,8 @@ export default function HeaderContainer() {
             Mobile App Development Team
           </Header.Description>
         </Header.Box>
-        <Header.Contact>Talk to us!</Header.Contact>
+        {/* <Header.Contact></Header.Contact> */}
+        <div></div>{/*  PUT IT BECAUSE OF CSS*/}
       </Header>
     )
 }

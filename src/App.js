@@ -4,6 +4,7 @@ import HeaderContainer from './containers/HeaderContainer';
 import ProjectContainer from './containers/ProjectContainer';
 import InfoContainer from './containers/InfoContainer';
 import ProjectShowcase from './components/showcase/Showcase';
+import Footer from './components/footer/Footer';
 
 // Confesiones Data
 import ConfesionesIcon from './images/confesiones-icon.png';
@@ -35,10 +36,11 @@ function App() {
         <ProjectContainer title="CONFESIONES" text="Juega con tus amigos y diviértete leyendo sus pensamientos y poniéndoselo dificil para que no te ganen a ti.
         Confesiones es un juego de preguntas y respuestas multijugador de 3 a 8 personas"
         QRSvg={ConfesionesQR} Icon={ConfesionesIcon} images={[ConfesionesScreen1, ConfesionesScreen2, ConfesionesScreen3, ConfesionesScreen4]} />
-        <ProjectContainer title="QUICKLY PRESS THE BUTTON!" text="Una vez al día tu y todo el mundo, en el mismo moneto, tendreís la oportunidad de pulsa el botón.
+        <ProjectContainer title="QUICKLY PRESS THE BUTTON!" text="Una vez al día tu y todo el mundo, en el mismo momento, tendreís la oportunidad de pulsar el botón.
         Sé  el más rapido y vence a todos."
         QRSvg={QuicklyQR} Icon={QuicklyIcon} images={[QuicklyScreen1, QuicklyScreen2, QuicklyScreen3]} carousel_width="243px"/>
       </ProjectShowcase.ShowContainer>
+      <Footer></Footer>
     </React.Fragment>
   );
 }
