@@ -1,0 +1,13 @@
+img {
+  margin: auto;
+}
+#carousel-wrap{
+  width: 700px;
+  
+} 
+
+@media (max-width: 1000px) {
+  #carousel-wrap{
+    width: 300px;
+  } 
+}

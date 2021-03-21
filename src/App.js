@@ -1,88 +1,46 @@
 import React from 'react';
-import Header from './components/header/Header';
-import Info from './components/info/Info';
-import { ReactComponent as DevImage } from './images/coding.svg';
-import { ReactComponent as ExpImage } from './images/compass.svg';
-import { ReactComponent as InnImage } from './images/light-bulb.svg';
 
+import HeaderContainer from './containers/HeaderContainer';
+import ProjectContainer from './containers/ProjectContainer';
+import InfoContainer from './containers/InfoContainer';
+import ProjectShowcase from './components/showcase/Showcase';
+import Footer from './components/footer/Footer';
+
+// Confesiones Data
+import ConfesionesIcon from './images/confesiones-icon.png';
+import ConfesionesScreen1 from './images/confesiones1.png';
+import ConfesionesScreen2 from './images/confesiones2.png';
+import ConfesionesScreen3 from './images/confesiones3.png';
+import ConfesionesScreen4 from './images/confesiones4.png';
+import { ReactComponent as ConfesionesQR } from './images/confesiones-qr-code.svg';
+
+
+// Quickly Data
+import QuicklyIcon from './images/quickly-icon.png';
+import QuicklyScreen1 from './images/quickly1.png';
+import QuicklyScreen2 from './images/quickly2.png';
+import QuicklyScreen3 from './images/quickly3.png';
+import { ReactComponent as QuicklyQR } from './images/quickly-qr-code.svg';
 function App() {
 
   return (
     <React.Fragment>
 
-      {/*Encabezado*/}
-      <Header>
-        <Header.Box>
-          <Header.Team>
-            Common Devs
-          </Header.Team>
-          <Header.Description>
-            Mobile App Development Team
-          </Header.Description>
-        </Header.Box>
-        <Header.Contact>Talk to us!</Header.Contact>
-      </Header>
-
-      {/*Carta informativa*/}
-      <Info>
-        <Info.Card fillColor="#DCFFF9" textColor="#00604E">
-          <Info.Wrapper>
-            <Info.Title>
-              What do we offer?
-            </Info.Title>
-            <Info.Hwrapper>
-              <Info.Wrapper>
-                <DevImage width="96px" height="auto"/>
-                <p>Development</p>
-              </Info.Wrapper>
-              <Info.Wrapper>
-                <ExpImage width="96px" height="auto"/>
-                <p>Exploration</p>
-              </Info.Wrapper>
-              <Info.Wrapper>
-                <InnImage width="96px" height="auto"/>
-                <p>Innovation</p>
-              </Info.Wrapper>
-            </Info.Hwrapper> 
-          </Info.Wrapper>  
-        </Info.Card>
-        <Info.Card>
-          <Info.Image>
-            <DevImage fill="white" width="96px" height="auto" />
-          </Info.Image>
-          <Info.Wrapper>
-            <Info.Title>Development</Info.Title>
-            <Info.Description>Blablal with very labal a lot so very good  yes ye sy</Info.Description>
-          </Info.Wrapper>
-        </Info.Card>
-        <div style={{width: "90%", height: "1px", backgroundColor: "#DCFFF9"}} />
-        <Info.Card>
-          <Info.Image>
-            <ExpImage fill="white" width="96px" height="auto" />
-          </Info.Image>
-          <Info.Wrapper>
-            <Info.Title>Exploration</Info.Title>
-            <Info.Description>We dive deep into minds to fing what´s best</Info.Description>
-          </Info.Wrapper>
-        </Info.Card>
-        <div style={{width: "90%", height: "1px", backgroundColor: "#DCFFF9"}} />
-        <Info.Card>
-          <Info.Image>
-            <InnImage fill="white" width="96px" height="auto" />
-          </Info.Image>
-          <Info.Wrapper>
-            <Info.Title>Innovation</Info.Title>
-            <Info.Description>O que xlldlelell jadjk noo eee ni tan mal</Info.Description>
-          </Info.Wrapper>
-        </Info.Card>
-        
-        
-        
-      </Info>
-
-
-
-      
+      <HeaderContainer />
+      <InfoContainer />
+      <ProjectShowcase.ShowContainer>
+        <ProjectShowcase.ShowcaseTitle>
+          Projects Showcase
+        </ProjectShowcase.ShowcaseTitle>
+        <div style={{ width: "90%", height: "1px", backgroundColor: "#f5f5f5" }} />
+        <ProjectContainer title="CONFESIONES" text="Juega con tus amigos y diviértete leyendo sus pensamientos y poniéndoselo dificil para que no te ganen a ti.
+        Confesiones es un juego de preguntas y respuestas multijugador de 3 a 8 personas"
+        QRSvg={ConfesionesQR} Icon={ConfesionesIcon} images={[ConfesionesScreen1, ConfesionesScreen2, ConfesionesScreen3, ConfesionesScreen4]} />
+        <ProjectContainer title="QUICKLY PRESS THE BUTTON!" text="Una vez al día tu y todo el mundo, en el mismo momento, tendreís la oportunidad de pulsar el botón.
+        Sé  el más rapido y vence a todos."
+        QRSvg={QuicklyQR} Icon={QuicklyIcon} images={[QuicklyScreen1, QuicklyScreen2, QuicklyScreen3]} carousel_width="243px"/>
+      </ProjectShowcase.ShowContainer>
+      <Footer></Footer>
     </React.Fragment>
   );
 }

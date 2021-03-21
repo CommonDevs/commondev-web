@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.first-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (min-width: 870px) {
+  .first-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+.footer-container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.columns {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+@media (min-width: 870px) {
+  .columns {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+}
+
+.img-logo {
+  max-height: 70px;
+  min-height: 70px;
+  border-radius: 35%;
+  width: auto;
+}
+
+.socialMediaLogo {
+  margin: 0 10%;
+}
+
+.third-title, .second-title, .first-title {
+  font-family: "Mulish", regular;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.first-title {
+  font-weight: bolder;
+  font-size: 28px;
+}
+
+.stay-connected-title {
+  font-family: "Mulish", regular;
+  font-size: 20px;
+  align-self: center;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-family: "Mulish", regular;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.resources {
+  font-family: "Mulish", regular;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.resources:hover {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.col-about {
+  min-width: auto;
+  display: flex;
+  flex-direction: column;
+}
