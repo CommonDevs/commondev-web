@@ -33,11 +33,12 @@ function App() {
           Projects Showcase
         </ProjectShowcase.ShowcaseTitle>
         <div style={{ width: "90%", height: "1px", backgroundColor: "#f5f5f5" }} />
-        <ProjectContainer title="CONFESIONES" text="Juega con tus amigos y diviértete leyendo sus pensamientos y poniéndoselo dificil para que no te ganen a ti.
-        Confesiones es un juego de preguntas y respuestas multijugador de 3 a 8 personas"
+        <ProjectContainer title="CONFESSIONS" text="Born in the heat of a party, Confessions gives a much refreshing and needed change into the party gaming scene.
+        Play with your friends and have fun diving in their minds and outplaying them.
+        Confessions is an online mutiplayer game from 3 to 8 players."
         QRSvg={ConfesionesQR} Icon={ConfesionesIcon} images={[ConfesionesScreen1, ConfesionesScreen2, ConfesionesScreen3, ConfesionesScreen4]} />
-        <ProjectContainer title="QUICKLY PRESS THE BUTTON!" text="Una vez al día tu y todo el mundo, en el mismo momento, tendreís la oportunidad de pulsar el botón.
-        Sé  el más rapido y vence a todos."
+        <ProjectContainer title="QUICKLY PRESS THE BUTTON!" text="New and simple can still be discovered. Once a day and at the same time, you and everyone who is playing get the chance to press the button.
+        Complete globally,rank up in the leaderboard and have an adrenaline shot when you see the notification."
         QRSvg={QuicklyQR} Icon={QuicklyIcon} images={[QuicklyScreen1, QuicklyScreen2, QuicklyScreen3]} carousel_width="243px"/>
       </ProjectShowcase.ShowContainer>
       <Footer></Footer>

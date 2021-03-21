@@ -6,7 +6,7 @@ export default function Carousel({images = [],carousel_width="288px"}) {
   var settings = {
     
     arrows: true,
-    dots: true,
+    dots: false,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
