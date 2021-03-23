@@ -3,7 +3,7 @@ body {
   font-family:  'Sansation';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to top, #009D7F,#008B72 , #007D66, #00604E, #004A3C);
+  background-image: linear-gradient(to top, #00B290, #009D7F,#008B72 , #007D66, #00604C);
 }
 
 code {

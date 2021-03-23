@@ -1,8 +1,9 @@
 import React from 'react';
 import ProjectShowcase from '../components/showcase/Showcase';
-import "./container-styles.css"
+import Misc from '../components/miscelaneous/Miscelaneous';
 
 import Carousel from '../components/carousel/Carousel';
+
 export default function ProjectContainer({QRSvg,Icon,title = "",text ="",images = [],carousel_width}) {
     return (
       <React.Fragment> 
@@ -24,7 +25,7 @@ export default function ProjectContainer({QRSvg,Icon,title = "",text ="",images 
          
         </ProjectShowcase>
         <Carousel images={images} carousel_width={carousel_width}/>
-        <div className = "carousel_line"/>
+        <Misc.WhiteBreakLine margin="2% 0 2% 0"/>
       </React.Fragment>
       )
       

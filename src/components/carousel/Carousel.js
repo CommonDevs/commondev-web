@@ -22,6 +22,7 @@ export default function Carousel({images = [],carousel_width="288px"}) {
       }
     ]
   };
+  
   return (
     <div id="carousel-wrap">
       <Slider {...settings}>

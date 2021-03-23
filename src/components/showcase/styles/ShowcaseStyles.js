@@ -19,7 +19,7 @@ export const MainTitle = styled.div`
 export const Showcase = styled.div`
     display: flex;
     justify-content: center;
-    margin: 2% 0 2% 0;
+    margin: 0 0 2% 0;
     width: 90%;
     @media (max-width: 1000px) {
         margin: 10% 0 10% 0;
