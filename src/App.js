@@ -28,7 +28,8 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<React.Fragment>
+      <Route path="/" element={
+      <React.Fragment>
         <HeaderContainer />
         <InfoContainer />
         <ProjectShowcase.ShowContainer>
@@ -45,8 +46,8 @@ function App() {
             QRSvg={QuicklyQR} Icon={QuicklyIcon} images={[QuicklyScreen1, QuicklyScreen2, QuicklyScreen3]} carousel_width="243px" />
         </ProjectShowcase.ShowContainer>
         <Footer></Footer>
-      </React.Fragment>} />
-      <Route path="/firstpartysets" element={<FirstPartySetComponent/>} />
+      </React.Fragment>}/>
+      <Route path="/firstpartyset" element={<FirstPartySetComponent/>}/>
     </Routes>
 
 
