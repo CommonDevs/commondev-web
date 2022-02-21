@@ -1,0 +1,11 @@
+.FirstPartySetComponent {
+    font-size: 50px;
+
+}
+@media screen and (max-width: 600px) {
+.FirstPartySetComponent {
+    font-size: 25px;
+    margin: auto;
+    width: 90%;
+}
+}
